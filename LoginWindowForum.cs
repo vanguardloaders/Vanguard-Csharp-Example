@@ -11,16 +11,16 @@ using Vanguard;
 
 namespace Vanguard_Csharp_Example
 {
-    public partial class LoginWindow : Form
+    public partial class LoginWindowForum : Form
     {
-        public LoginWindow()
+        public LoginWindowForum()
         {
             InitializeComponent();
         }
 
-        private void LoginWindow_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Functions.InitializeApplication(VLAuthentication.PUBLIC_KEY);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,9 +29,14 @@ namespace Vanguard_Csharp_Example
             LoginWorker.RunWorkerAsync();
         }
 
+        private void LoginWindowForum_Load(object sender, EventArgs e)
+        {
+            Functions.InitializeApplication(VLAuthentication.PUBLIC_KEY);
+        }
+
         private void LoginWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            Functions.LoginWithLicense(textBox1.Text, s =>
+            Functions.Login(textBox1.Text, textBox2.Text, s =>
             {
                 e.Result = s;
             });
@@ -52,6 +57,11 @@ namespace Vanguard_Csharp_Example
             }
 
             button1.Enabled = true;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

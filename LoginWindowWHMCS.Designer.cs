@@ -1,7 +1,7 @@
 ﻿
 namespace Vanguard_Csharp_Example
 {
-    partial class LoginWindow
+    partial class LoginWindowWHMCS
     {
         /// <summary>
         /// Required designer variable.
