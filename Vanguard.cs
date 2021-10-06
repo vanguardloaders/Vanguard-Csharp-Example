@@ -9,7 +9,7 @@ namespace Vanguard
 {
     class VLAuthentication
     {
-        public static string PUBLIC_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXX";
+        public static string PUBLIC_KEY = "eyJpdiI6InZ2bWw5TjE1aEdGWWJtN0VCUUFSZVE9PSIsInZhbHVlIjoiN3hQMXlPUlBCcjBKOUxaaEZZb1k4MUNreG54QitxbFk5dFN3YjY0UXRicz0iLCJtYWMiOiIyOGZlMTA4ZmU5YjU2ZDcwZjE4Mzk0ZDkwYTM2Y2MwNzVkZTg5Mzk3YzFlODA0NGExMjc0ZmFiMmE2ZGIyNDFlIn0=";
     }
     class Functions
     {

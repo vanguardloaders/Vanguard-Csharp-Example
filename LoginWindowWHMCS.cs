@@ -20,7 +20,9 @@ namespace Vanguard_Csharp_Example
 
         private void LoginWindow_Load(object sender, EventArgs e)
         {
+            
             Functions.InitializeApplication(VLAuthentication.PUBLIC_KEY);
+           // MessageBox.Show("Iniciado.");
         }
 
         private void button1_Click(object sender, EventArgs e)

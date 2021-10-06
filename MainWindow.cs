@@ -109,7 +109,7 @@ namespace Vanguard_Csharp_Example
                 progressBar1.Style = ProgressBarStyle.Marquee;
             }
             
-            if (statusStr == "Injection Failed." || statusStr == "Injection Success!" || statusStr == "Ready.")
+            if (statusStr == "Injection Failed." || statusStr == "Injection Success!" || statusStr == "Ready." || statusStr.Contains("not running"))
             {
                 progressBar1.Style = ProgressBarStyle.Blocks;
                 button1.Enabled = true;
